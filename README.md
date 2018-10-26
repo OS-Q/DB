@@ -43,6 +43,33 @@ https://mariadb.org/
 
 ---
 
+### PostgreSQL
+
+
+PostgreSQL 拥有超过 15 年的积累，是另一个明星级开源选择，运行于所有主要的操作系统，包括Linux，UNIX（AIX，BSD，HP-UX，SGI IRIX，Mac OS X，Solaris，Tru64）和 Windows。 PostgreSQL 还完全符合 ACID 要素（原子性，一致性，隔离性，持久性）。
+
+
+#### 优点：
+
+* 创建自定义数据类型和查询方法
+
+* 框架允许定义和创建自定义数据类型
+
+* 以十几种编程语言运行存储过程：Java，Perl，Python，Ruby，Tcl，C / C ++及其自己的PL / pgSQL
+
+* GiST（广义搜索树）系统：B 树，B+树，R 树，部分和树，以及排名的 B+ 树，提供不同的排序和搜索算法：
+
+* 创建扩展如 CitusDB 更多的并行性，而不修改 Postgres 代码
+
+ 
+#### 缺点：
+
+* MVCC系统需要定期的“清理（vacuuming）”，高交易率环境中的问题
+
+* 由强大的社区发展起来的，改进需要更大的努力
+
+---
+
 ### MongoDB
 
 MongoDB创立于2007年，被称为“数据库巨头”。 由DoubleClick, ShopWiki 和Gilt Groupe 背后的开发人员开发，并由 Fidelity Investments，Goldman Sachs Group，Inc.，Intel Capital 这些机构投资。
