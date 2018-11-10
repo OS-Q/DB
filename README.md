@@ -4,7 +4,7 @@ Q系统数据库部分，用于管理各种生命周期的数据
 
 [![sites](OS-Q/OS-Q.png)](http://www.os-q.com)
 
-#### 更多关于：[DB-Q](https://github.com/OS-Q/DB-Q) 可访问 www.OS-Q.com
+#### 更多关于：[OS-Q](https://github.com/OS-Q/OS-Q) 可访问 www.OS-Q.com
 
 ---
 
@@ -16,13 +16,6 @@ Q系统数据库部分，用于管理各种生命周期的数据
 ## 组成
 
 ---
-
-### ZeroMQ
-
-ZeroMQ号称是“史上最快的消息队列”，基于c语言开发的，实时流处理sorm的task之间的通信就是用的zeroMQ。
-
-ZMQ(ZeroMQ简称)是一个简单好用的传输层，像框架一样的一个socket library，他使得Socket编程更加简单、简洁和性能更高。是一个消息处理队列库，可在多个线程、内核和主机盒之间弹性伸缩。
-
 
 ### MariaDB
 
