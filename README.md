@@ -1,10 +1,15 @@
-﻿[![sites](docs/os-q.png)](http://www.os-q.com)
-
-# DB (www.OS-Q.com)
-
-### 简介
+﻿# DB-Q:[OS-Q数据库](https://github.com/OS-Q/DB-Q) 
 
 Q系统数据库部分，用于管理各种生命周期的数据
+
+[![sites](docs/os-q.png)](http://www.os-q.com)
+
+#### 更多关于：[DB-Q](https://github.com/OS-Q/DB-Q) 可访问 www.OS-Q.com
+
+---
+
+## 简介
+
 
 ---
 
