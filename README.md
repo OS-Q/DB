@@ -1,23 +1,30 @@
-﻿# DB-Q:[OS-Q数据库](https://github.com/OS-Q/DB-Q) 
+﻿# [DB-Q](https://github.com/OS-Q/DB-Q) 
 
 Q系统数据库部分，用于管理各种生命周期的数据
 
 [![sites](OS-Q/OS-Q.png)](http://www.os-q.com)
 
-#### 更多关于：[OS-Q](https://github.com/OS-Q/OS-Q) 可访问 www.OS-Q.com
+#### 边缘设备：[Edge-Q](https://github.com/OS-Q/Edge-Q)
+#### 关于通信：[MQ-Q](https://github.com/OS-Q/MQ-Q)
+#### 关于呈现：[UI-Q](https://github.com/OS-Q/UI-Q)
+#### 功能调用：[FaaS](https://github.com/OS-Q/FaaS)
+
+#### 系统构思：[OS-Q](https://github.com/OS-Q/OS-Q) 可访问 www.OS-Q.com
 
 ---
 
-## 简介
+## [简介](https://github.com/OS-Q/DB-Q/wiki)
 
 
 ---
 
-## 组成
+## 项目组成
 
 ---
 
-### MariaDB
+### [MariaDB](https://github.com/mongodb)  
+
+开源关系型数据库 
 
 MariaDB 由 MySQL 的原创人员开发，并被维基百科，Facebook 甚至 Google 等技术巨头使用。 
 
@@ -43,15 +50,20 @@ MariaDB 是一种可为 MySQL 提供插件替换功能的数据库服务器。�
 
 * 没有优化器跟踪
 
+MySQL在一个领域上要比PostgreSQL更进一步，那就是它的触角延伸到了嵌入式领域，这是通过libmysqld实现的。
+
+#### [MariaDB Docker](https://github.com/docker-library/mariadb) 
+
+https://mariadb.com/
 
 https://mariadb.org/
 
 ---
 
-### PostgreSQL
+### [PostgreSQL](https://www.postgresql.org/)  
 
 
-PostgreSQL 拥有超过 15 年的积累，是另一个明星级开源选择，运行于所有主要的操作系统，包括Linux，UNIX（AIX，BSD，HP-UX，SGI IRIX，Mac OS X，Solaris，Tru64）和 Windows。 PostgreSQL 还完全符合 ACID 要素（原子性，一致性，隔离性，持久性）。
+MySQL基于多线程而PostgreSQL基于多进程，PostgreSQL是针对事务型企业应用的严肃、功能完善的数据库，支持强ACID特性和很多数据完整性检查。
 
 
 #### 优点：
@@ -73,11 +85,31 @@ PostgreSQL 拥有超过 15 年的积累，是另一个明星级开源选择，�
 
 * 由强大的社区发展起来的，改进需要更大的努力
 
+
+
 ---
 
-### MongoDB
+## [NoSQL](https://github.com/OS-Q/DB-Q/wiki) 
 
-MongoDB创立于2007年，被称为“数据库巨头”。 由DoubleClick, ShopWiki 和Gilt Groupe 背后的开发人员开发，并由 Fidelity Investments，Goldman Sachs Group，Inc.，Intel Capital 这些机构投资。
+在关系型数据库中，除非你事先定义了表和字段的模式否则你无法向其中添加数据。
+
+模式中包含了许多的信息：
+
+- 主键 — 独一无二的标志就像ISBN唯一确定一条记录
+- 索引 — 通常设置索引字段加快搜索的速度
+- 关系 — 字段之间的逻辑连接
+- 设计功能例如触发器和存储程序
+
+在进行数据的逻辑操作之前我们必须要定义数据模式。数据模式可以在后期进行更改，但是对于模式的大改将会是非常复杂的。
+
+在NoSQL的数据库中，数据在任何时候都可以进行添加。不需要事先去定义文档和集合。
+
+---
+
+### [MongoDB](https://github.com/mongodb)  
+
+介于关系型和非关系型之间,面向文档的数据库，采用 binlog方式支持持久化的可靠性 
+
 
 #### 优点：
 
@@ -107,24 +139,16 @@ MongoDB创立于2007年，被称为“数据库巨头”。 由DoubleClick, Shop
 
 ---
 
-### SQLite
+### [Redis](https://github.com/antirez/redis)   
 
-一个强大的嵌入式关系型数据库管理系统。
+Redis兼具Memcached和Tokyo Tyrant优势的键值存，擅长处理数组类型的数据，具有非常快的处理速度
+可以高速处理时间序列的数据，易于处理集合运算
+拥有很多可以进行原子操作的方法
+使用一致性散列(Consistent Hashing)算法来分散数据
 
-SQLite是非凡的数据库，作为一个自包含、基于文件的数据库，SQLite提供了出色的工具集，可以处理所有类型的数据，没有什么限制。
-
-一个应用使用SQLite时，它的功能直接被集成在其中，应用会直接访问包含数据的文件（即SQLite数据库）,而不是通过一些端口（port, socket）来交互。
-
-#### 优点：
-
-* 基于文件: 整个数据库都包含在磁盘上的一个文件中，因此它有很好的迁移性。
-
-* 标准化: 尽管它看起来像个“简化版”的数据库，SQLite 确实支持 SQL。它略去了一些功能(RIGHT OUTER JOIN 和 FOR EACH STATEMENT)，但是，又同时增加了一些其他功能。
-
-#### 缺点：
-
-* 没有用户管理: 高级数据库都能支持用户系统，例如，能管理数据库连接对数据库和表的访问权限。但由于 SQLite 产生的目的和本身性质（没有多用户并发的高层设计），它没有这个功能。
-
-* 缺乏额外优化性能的灵活性：从设计之初SQLite 就不支持使用各种技巧来进行额外的性能优化。这个库容易配置，容易使用。既然它并不复杂，理论上就无法让它比现在更快，其实现在它已经很快了。
 
 ---
+
+###  锻造最美之器
+
+###  www.OS-Q.com     |    qitas@qitas.cn
