@@ -3,20 +3,20 @@
 [![sites](OS-Q/OS-Q.png)](http://www.os-q.com)
 
 #### 系统硬件：[Edge](https://github.com/OS-Q/Edge-Q)
-#### 消息组件：[MQ-Q](https://github.com/OS-Q/MQ-Q)
-#### 系统交互：[UI-Q](https://github.com/OS-Q/UI-Q)
 #### 系统服务：[QaaS](https://github.com/OS-Q/QaaS)
-#### 系统构思：[OS-Q](https://github.com/OS-Q/OS-Q)
+#### 系统交互：[UI-Q](https://github.com/OS-Q/UI-Q)
+#### 系统存储：[DB-Q](https://github.com/OS-Q/DB-Q)
+#### 系统通信：[MQ-Q](https://github.com/OS-Q/MQ-Q)
 
----
-
-## [简介](https://github.com/OS-Q/DB-Q/wiki)
+## [DB-Q简介](https://github.com/OS-Q/DB-Q/wiki)
 
 Q系统数据库部分，用于管理各种生命周期的数据，DB-Q用于设备的本地数据存储
 
+#### 关于系统架构：[OS-Q](https://github.com/OS-Q/OS-Q)
+
 ---
 
-# Q1
+# [Q1](https://github.com/OS-Q/Q1) 
 
 ## [FatFS](https://www.sqlite.org/)  
 
@@ -25,7 +25,7 @@ FatFs是一个通用的文件系统模块，用于在小型嵌入式系统中实
 
 ---
 
-# Q2
+# [Q2](https://github.com/OS-Q/Q2) 
 
 ## [SQLite](https://www.sqlite.org/)  
 
@@ -33,7 +33,7 @@ SQLite，是一款轻型的数据库，是遵守ACID的关系型数据库管理�
 
 ---
 
-# Q3
+# [Q3](https://github.com/OS-Q/Q3) 
 
 ## [MariaDB](https://github.com/MariaDB)  
 
@@ -48,12 +48,12 @@ MariaDB 是一种可为 MySQL 提供插件替换功能的数据库服务器。�
 - 缺点：缺少密码复杂性插件，没有memcached界面，没有优化器跟踪
 
 
-MariaDB主要对手是PostgreSQL，但是MySQL在嵌入式领域要比PostgreSQL更进一步，这是通过libmysqld实现的。
-
 
 #### [MariaDB Docker](https://github.com/docker-library/mariadb) 
-#### [MariaDB 网站](https://mariadb.org/) 
+#### [MariaDB site](https://mariadb.org/) 
 #### [MariaDB Go](https://github.com/go-sql-driver/mysql.git) 
+
+MariaDB主要对手是PostgreSQL，但是MySQL在嵌入式领域要比PostgreSQL更进一步，这是通过libmysqld实现的。
 
 ## [PostgreSQL](https://www.postgresql.org/)  
 
@@ -87,7 +87,7 @@ NoSQL数据库将数据存储于缓存之中，关系型数据库将数据存储
 
 ---
 
-# Q4
+# [Q4](https://github.com/OS-Q/Q4) 
 
 ## [MongoDB](https://github.com/mongodb)  
 
@@ -122,17 +122,11 @@ NoSQL数据库将数据存储于缓存之中，关系型数据库将数据存储
 
 ## [Redis](https://github.com/antirez/redis)   
 
-Redis兼具Memcached和Tokyo Tyrant优势的键值存，擅长处理数组类型的数据，具有非常快的处理速度
-
-可以高速处理时间序列的数据，易于处理集合运算
-
-拥有很多可以进行原子操作的方法
-
-使用一致性散列(Consistent Hashing)算法来分散数据
+Redis兼具Memcached和Tokyo Tyrant优势的键值存，擅长处理数组类型的数据，具有非常快的处理速度,可以高速处理时间序列的数据，易于处理集合运算；拥有很多可以进行原子操作的方法，使用一致性散列(Consistent Hashing)算法来分散数据
 
 
 ---
 
-###  [Q redefined the scope of operation system](http://www.OS-Q.com)
 ###  qitas@qitas.cn
-###  2018-11-29
+####  [Q redefined the scope of Operation System](http://www.OS-Q.com)
+
