@@ -7,16 +7,14 @@
 #### 系统交互：[UI-Q](https://github.com/OS-Q/UI-Q)
 #### [系统存储：DB-Q](https://github.com/OS-Q/DB-Q)
 #### 系统通信：[MQ-Q](https://github.com/OS-Q/MQ-Q)
+#### 系统架构：[OS-Q](https://github.com/OS-Q/OS-Q)
 
 ## [DB-Q简介](https://github.com/OS-Q/DB-Q/wiki)
 
 Q系统数据库部分，DB-Q用于本地存储各种生命周期的数据，也是系统分布数据库的一部分
 
-### 关于架构：[OS-Q](https://github.com/OS-Q/OS-Q)
 
----
-
-# [Q1体系](https://github.com/OS-Q/Q1) 
+## [Q1体系](https://github.com/OS-Q/Q1) 
 
 嵌入式边缘控制体系
 
@@ -25,13 +23,9 @@ Q系统数据库部分，DB-Q用于本地存储各种生命周期的数据，也
 FatFs是一个通用的文件系统模块，用于在小型嵌入式系统中实现FAT文件系统。 FatFs 的编写遵循ANSI C，因此不依赖于硬件平台。它可以嵌入到便宜的微控制器中，如 8051, PIC, AVR, SH, Z80, H8, ARM 等等，不需要做任何修改。
 
 
-#### [STM32](https://github.com/akospasztor/stm32-bootloader)  
-
-Customizable Bootloader for STM32 microcontrollers. This example demonstrates how to perform in-application-programming of a firmware located on external SD card with FAT32 file system.
-
 ---
 
-# [Q2体系](https://github.com/OS-Q/Q2) 
+## [Q2体系](https://github.com/OS-Q/Q2) 
 
 边缘通信体系设备
 
@@ -39,8 +33,9 @@ Customizable Bootloader for STM32 microcontrollers. This example demonstrates ho
 
 SQLite，是一款轻型的数据库，是遵守ACID的关系型数据库管理系统，它包含在一个相对小的C库中。它占用资源非常的低，大致13万行C代码, 4.43M，在嵌入式设备中，可能只需要几百K的内存就够了。
 
+---
 
-# [Q3体系](https://github.com/OS-Q/Q3) 
+## [Q3体系](https://github.com/OS-Q/Q3) 
 
 边缘计算体系，用于本地存储数据
 
@@ -57,12 +52,6 @@ MariaDB 是一种可为 MySQL 提供插件替换功能的数据库服务器。�
 - 缺点：缺少密码复杂性插件，没有memcached界面，没有优化器跟踪
 
 
-#### [MariaDB Docker](https://github.com/docker-library/mariadb) 
-#### [MariaDB site](https://mariadb.org/) 
-#### [MariaDB Go](https://github.com/go-sql-driver/mysql.git) 
-
-
-```
 
 NoSQL数据库将数据存储于缓存之中，关系型数据库将数据存储在硬盘中，通常情况下，NoSQL比SQL语言更快。
 
@@ -81,10 +70,10 @@ NoSQL数据库将数据存储于缓存之中，关系型数据库将数据存储
 
 - 事务支持使得对于安全性能很高的数据访问要求得以实现。对于这两类数据库，对方的优势就是自己的弱势，反之亦然。
 
-```
 
+---
 
-# [Q4体系](https://github.com/OS-Q/Q4) 
+## [Q4体系](https://github.com/OS-Q/Q4) 
 
 弹性计算体系，用于处理临时数据流
 
@@ -96,12 +85,30 @@ NoSQL数据库将数据存储于缓存之中，关系型数据库将数据存储
 
 Redis擅长处理数组类型的数据，具有非常快的处理速度,可以高速处理时间序列的数据，易于处理集合运算
 
+---
+
+## [关联组件](https://github.com/OS-Q/OS-Q/wiki)
+
+#### [通信组件](https://github.com/OS-Q/MQ-Q) 
+
+实现所有平台设备间的通信连接
+
+#### [硬件组件](https://github.com/OS-Q/Edge-Q) 
+
+容纳所有功能的硬件设备和平台
+
+#### [交互组件](https://github.com/OS-Q/UI-Q) 
+
+实现所有平台设备间的呈现交互
+
+#### [服务组件](https://github.com/OS-Q/QaaS) 
+
+实现所有平台设备间的功能接口
+
 
 
 ---
 
-###  qitas@qitas.cn
-
-###  [Q redefined the scope of Operation System](http://www.OS-Q.com)
-
-####  2018-12-7
+####  © qitas@qitas.cn
+###  [OS-Q redefined Operation System](http://www.OS-Q.com)
+####  @ 2019-2-24
