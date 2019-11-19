@@ -4,7 +4,11 @@
 
 ## [DB-Q简介](https://github.com/OS-Q/DB-Q/wiki)
 
-[DB-Q](https://github.com/OS-Q/DB-Q) 是是Q系统数据存储节点，用过数据的持久化。
+[DB-Q](https://github.com/OS-Q/DB-Q)是[OS-Q](https://github.com/OS-Q/OS-Q)的数据存储节点
 
+### 数据库组件
+
+* RDBMS ：mariaDB/PostgreSQL
+* NoSQL：redis/mongoDB
 
 ### [OS-Q = Open Solutions | Open Source |  Operating System ](http://www.OS-Q.com/DB)
