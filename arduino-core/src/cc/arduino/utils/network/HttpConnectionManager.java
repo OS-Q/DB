@@ -129,7 +129,7 @@ public class HttpConnectionManager {
     HttpURLConnection connection = (HttpURLConnection) requestURL
       .openConnection(proxy);
 
-    // see https://github.com/arduino/Arduino/issues/10264
+    // see https://github.com/OS-Q/S04/issues/10264
     // Workaround for https://bugs.openjdk.java.net/browse/JDK-8163921
     connection.setRequestProperty("Accept", "*/*");
 

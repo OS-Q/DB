@@ -168,7 +168,7 @@ public class AdditionalBoardsManagerURLTextArea extends javax.swing.JDialog {
   }//GEN-LAST:event_unofficialListURLLabelMouseExited
 
   private void unofficialListURLLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unofficialListURLLabelMouseClicked
-    Base.openURL("https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls");
+    Base.openURL("https://github.com/OS-Q/S04/wiki/Unofficial-list-of-3rd-party-boards-support-urls");
   }//GEN-LAST:event_unofficialListURLLabelMouseClicked
 
   public void setText(String text) {

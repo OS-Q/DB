@@ -50,7 +50,7 @@ public class SerialTest {
   @Test
   public void testSerialUTF8Decoder() throws Exception {
     NullSerial s = new NullSerial();
-    // https://github.com/arduino/Arduino/issues/9808
+    // https://github.com/OS-Q/S04/issues/9808
     String testdata = "012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789°0123456789";
     s.processSerialEvent(testdata.getBytes());
     assertEquals(s.output, testdata);
