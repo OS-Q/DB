@@ -1,7 +1,0 @@
-{
-    "name":"Gogs",
-    "type":"server",
-    "base":"*",
-    "url":"https://github.com/OS-Q/S04",
-    "version":"1.0.0"
-}
